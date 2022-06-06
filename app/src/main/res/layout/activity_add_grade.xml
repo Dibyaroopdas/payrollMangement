@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addGradeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/curved_bg_emp_details"
+        android:id="@+id/emp_details_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Grade Details"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_details_title"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/grade_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter Grade name"
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_shortname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter grade shortname"
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_basic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_shortname"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Grade Basic Salary "
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_ta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_basic"
+                android:layout_margin="20dp"
+                android:hint="Enter Travel Allowance"
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_hra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_ta"
+                android:layout_margin="20dp"
+                android:hint="Enter House Rent Allowance "
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_ma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_hra"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Medical Allowances"
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_bonus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_ma"
+                android:layout_margin="20dp"
+                android:hint="Enter Bonus "
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_pf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_bonus"
+                android:layout_margin="20dp"
+                android:hint="Enter Provident Fund"
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/grade_pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_pf"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Professional Tax"
+                android:inputType="numberDecimal"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade_pt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:background="@color/orange"
+                android:text="ADD GRADE"
+                android:textSize="20dp"
+                android:id="@+id/add_grade_btn"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

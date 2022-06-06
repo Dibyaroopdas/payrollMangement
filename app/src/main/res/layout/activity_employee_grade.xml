@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employeeGradeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/curved_bg_emp_details"
+        android:id="@+id/emp_grade_details_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD EMPLOYEE GRADES"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:id="@+id/dept_title"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/emp_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_grade_details_title"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Employee ID"
+        android:inputType="text"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emp_grade_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_id"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Employee GRADE ID"
+        android:inputType="text"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emp_dept_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_grade_id"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Grade ID"
+        android:inputType="text"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/orange"
+        android:text="ADD Grade details"
+        android:textSize="20dp"
+        android:id="@+id/add_emp_grade_btn"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

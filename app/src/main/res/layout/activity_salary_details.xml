@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalaryDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/curved_bg_emp_details"
+        android:id="@+id/salary_details_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALARY DETAILS"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:id="@+id/dept_title"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salary_details_title">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emp_id_det"
+            android:hint="enter the id of the employee"
+            />
+
+        <Button
+            android:id="@+id/emp_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emp_id_det"
+            android:layout_centerHorizontal="true"
+            android:text="get Salary Details" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_btn_id"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/emp_name"
+                    android:text="Employee Name :"
+
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/emp_name_salary"
+                    android:layout_toEndOf="@+id/emp_name"
+                    android:text="Employee Name"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/dept_name"
+                    android:text="Department Name :"
+                    android:layout_below="@id/emp_name_salary"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/dept_name_salary"
+                    android:layout_toEndOf="@+id/dept_name"
+                    android:text="Department Name"
+                    android:layout_below="@+id/emp_name_salary"/>
+
+                <TextView
+                    android:id="@+id/emp_basic"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dept_name"
+                    android:padding="10dp"
+                    android:text="Employee Basic Salary :"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/emp_baisc_salary"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dept_name_salary"
+                    android:layout_toEndOf="@+id/emp_basic"
+                    android:padding="10dp"
+                    android:text="Employee Basic Salary"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/pf"
+                    android:text="provident fund :"
+                    android:layout_below="@+id/emp_baisc_salary"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/pf_salary"
+                    android:layout_toEndOf="@+id/pf"
+                    android:text="pf"
+                    android:layout_below="@+id/emp_basic"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/pt"
+                    android:text="pt :"
+                    android:layout_below="@+id/pf"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/pt_salary"
+                    android:layout_toEndOf="@+id/emp_name"
+                    android:text="pt"
+                    android:layout_below="@+id/pf"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/hra"
+                    android:text="HOUSE RENT ALLOWANCE :"
+                    android:layout_below="@id/pt"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/hra_salary"
+                    android:layout_toEndOf="@+id/dept_name"
+                    android:text="hra"
+                    android:layout_below="@id/pt"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/ta"
+                    android:text="Travel Allowance :"
+                    android:layout_below="@+id/hra"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/ta_salary"
+                    android:layout_toEndOf="@+id/ta"
+                    android:text="ta"
+                    android:layout_below="@+id/hra"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/ma"
+                    android:text="Medical Acclowance :"
+                    android:layout_below="@+id/ta"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/ma_salary"
+                    android:layout_toEndOf="@+id/dept_name"
+                    android:text="ma"
+                    android:layout_below="@+id/ta"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/bonus"
+                    android:text="Bonus"
+                    android:layout_below="@+id/ma"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/bonus_salary"
+                    android:layout_toEndOf="@+id/dept_name"
+                    android:text="bonus"
+                    android:layout_below="@+id/ma"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/net"
+                    android:text="Net Salary"
+                    android:layout_below="@+id/bonus"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/net_salary"
+                    android:layout_toEndOf="@+id/dept_name"
+                    android:text="Net salary"
+                    android:layout_below="@+id/bonus"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

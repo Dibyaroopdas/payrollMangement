@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addEmployeeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/curved_bg_emp_details"
+        android:id="@+id/emp_details_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPLOYEE DETAILS"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_details_title"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter name"
+                android:paddingBottom="20dp"
+                android:textSize="20sp"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/emp_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter surname"
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_surname"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Address "
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_address"
+                android:layout_margin="20dp"
+                android:hint="Enter City "
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_city"
+                android:layout_margin="20dp"
+                android:hint="Enter State "
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_state"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Email "
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_pan_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_email"
+                android:layout_margin="20dp"
+                android:hint="Enter PAN NO. "
+                android:inputType="text"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_pan_no"
+                android:layout_margin="20dp"
+                android:hint="Enter Pincode "
+                android:inputType="number"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emp_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp_pincode"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Mobile Number "
+                android:inputType="number"
+                android:paddingBottom="20dp"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emp_mobile_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:background="@color/orange"
+                android:text="ADD EMPLOYEE"
+                android:textSize="20dp"
+                android:id="@+id/add_emp_btn"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

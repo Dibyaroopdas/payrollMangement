@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordLog"
+        android:hint="ENTER USERNAME"
+        android:id="@+id/emailLog"
+        android:textSize="15sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER PASSWORD"
+        android:layout_centerInParent="true"
+        android:id="@+id/passwordLog"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="15sp"
+        android:layout_below="@id/passwordLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+
+        android:id="@+id/login_log_btn"/>
+
+
+</RelativeLayout>
